@@ -68,13 +68,10 @@ jobs:
 
   Analysis:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0 
-        # You can pin the exact commit or the version.
-        # uses: SonarSource/sonarcloud-github-action@v2.2.0
       - name: Analyze with SonarCloud
         uses: SonarSource/sonarcloud-github-action@master
         env:
